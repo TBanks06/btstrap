@@ -14,7 +14,7 @@ function App() {
   const [Show, setShow] = useState(true)
 
   return (
-    <div className="App mx-auto">
+    <div className="App container mx-auto">
     <NavBar />
     <Content />
       {/* <FlxCont /> */}
