@@ -1,25 +1,26 @@
-import React from 'react'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Button from 'react-bootstrap/Button';
 
-const NavBar = () => {
+function BasicExample() {
   return (
-    <nav class="navbar  navbar-expand-lg bg-body-light mb-4">
-  <div class="container-fluid ">
-    <a class="navbar-brand" href="#">LineBiz</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div className='navbar-nav '>
-        <a className='nav-link ' aria-current="page" href="#">Platforms</a>
-        <a className='nav-link' href="#">Pricing</a>
-        <a className='nav-link' href="#">Events</a>
-        <a className='nav-link' href="#">About Us</a>
-        <button class="btn btn-outline-dark rounded-5 px-5" type="submit">Join</button>
-      </div>
-    </div>
-  </div>
-</nav>
-  )
+    <Navbar bg="white" expand="lg" style={{width: '49rem'}}>
+      <Container className='my-3 font-monospace'>
+        <Navbar.Brand href="#home">LineBiz</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mx-auto">
+            <Nav.Link href="#home">Platform</Nav.Link>
+            <Nav.Link href="#link">Pricing</Nav.Link>
+            <Nav.Link href="#link">Events</Nav.Link>
+            <Nav.Link href="#link">About Us</Nav.Link>
+          </Nav>
+          <Button className='px-4 rounded-5' variant="outline-dark">Join</Button>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
 
-export default NavBar
+export default BasicExample;
