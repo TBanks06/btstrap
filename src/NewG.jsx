@@ -7,7 +7,7 @@ function NewG() {
       <Card.Body className='bg-info rounded-4 '>
         
         <Card.Title className='mb-4 display-5 fw-normal font-monospace'>New goals  require new knowledge</Card.Title>
-            <Card.Text className='mb-2 fs-6 text-sm-start ' style={{width: '13.9em'}} >
+            <Card.Text className='mb-5 fs-6 text-sm-start fw-light lh-1' style={{width: '13rem'}} >
 
                 We have created an e-learning platform that allows teams to find, share, 
                 and use the knowledge, they need to achieve their goals.
