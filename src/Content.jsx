@@ -4,7 +4,7 @@ import HIphone from './HIphone'
 
 const Content = () => {
   return (
-    <div className='container d-flex flex-row gap-2 mx-auto'>
+    <div className='container d-flex flex-row gap-3 '>
         <FlxCont />
         <HIphone />
     </div>
